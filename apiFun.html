@@ -32,7 +32,7 @@
 					weather = JSON.parse(result);
 					var stringAns = "<img src= '" + weather.icon_url + "' alt='chuck'>";
 					stringAns = stringAns + "<p> Joke: " + weather.value + "</p>";
-					
+					alert(stringAns);
 					document.getElementById("data").innerHTML = stringAns; 
 					
 				}
