@@ -30,8 +30,10 @@
 				    result = xhr.responseText;
 					alert(result);
 					weather = JSON.parse(result);
+					var stringAns = "<img src= '" + weather.icon_url + "' alt='chuck'>";
+					stringAns = stringAns + "<p> Joke: " + weather.value + "</p>";
 					
-					document.getElementById("data").innerHTML ="Joke: " + weather.value; 
+					document.getElementById("data").innerHTML =; 
 					
 				}
 				else if (request.readyState == 4 && request.status != 200) {
