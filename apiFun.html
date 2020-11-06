@@ -4,7 +4,7 @@
 	<title>TasteDive API</title>
 	<meta charset="utf-8"/>
 	<script>
-		function getWeather() {
+	function getJoke() {
             /* Step 1: Make instance of request object...
 			...to make HTTP request after page is loaded*/
             const data = null;
@@ -31,7 +31,7 @@
 					alert(result);
 					weather = JSON.parse(result);
 					
-					document.getElementById("data").innerHTML ="current temp in boston: " + weather.value; 
+					document.getElementById("data").innerHTML ="Joke: " + weather.value; 
 					
 				}
 				else if (request.readyState == 4 && request.status != 200) {
@@ -51,14 +51,13 @@
                 xhr.send();
                 console.log("4 - Request sent");
         }
-        document.getElementById("data").innerHTML = "here";
 	</script>
 </head>
 
 
-<body onload="getWeather()">
+<body onload="getJoke()">
 
-	<h1>Weather</h1>
+	<h1>Chuck Norris Joke</h1>
 	<div id="data">Loading...</div>
 </body>
 </html>
