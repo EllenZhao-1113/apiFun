@@ -28,9 +28,8 @@
 					// Step 5: wait for done + success
 					console.log("5 - response received");
 				        result = xhr.responseText;
-					alert(result);
 					weather = JSON.parse(result);
-					document.getElementById("data").innerHTML = "<img src= '" + weather.icon_url + "' alt='chuck'>" + "Joke: " + weather.value; 
+					document.getElementById("data").innerHTML = "<img src= '" + weather.icon_url + "' alt='chuck'>" + "<p> Joke: " + weather.value + "</p>"; 
 					
 				}
 				else if (request.readyState == 4 && request.status != 200) {
